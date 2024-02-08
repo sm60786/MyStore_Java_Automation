@@ -34,6 +34,7 @@ public class LoginPage {
 	@FindBy(xpath = "//button[@id='SubmitLogin']")
 	WebElement buttonSignIn;
 	
+	
 	/**
 	 * Actions for Creating Account
 	 * @param emailAddress

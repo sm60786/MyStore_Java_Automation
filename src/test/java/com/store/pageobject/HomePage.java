@@ -46,8 +46,9 @@ public class HomePage {
 		return linkSignIn.isDisplayed();
 	}
 	
-	public void clickOnSignInLink() {
+	public LoginPage clickOnSignInLink() {
 		linkSignIn.click();
+		return new LoginPage(ldriver);
 	}
 	
 	public boolean checkWomensLink() {
@@ -64,6 +65,10 @@ public class HomePage {
 	
 	public boolean checkBlogLink() {
 		return linkBlog.isDisplayed();
+	}
+	
+	public boolean checkSearchTextField() {
+		return textFieldSearch.isDisplayed();
 	}
 	
 }

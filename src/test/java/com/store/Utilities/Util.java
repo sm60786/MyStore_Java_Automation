@@ -2,6 +2,7 @@ package com.store.Utilities;
 
 import java.time.LocalDateTime;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -9,6 +10,15 @@ public class Util {
 	
 	// Constants
 	public static final int IMPLICTLY_WAIT = 10;
+	
+	/**
+	 * 
+	 * @param element
+	 * @param value
+	 */
+	public static String getTitle(WebDriver driver) {
+		return driver.getTitle();
+	}
 	
 	// Method to handle drop down
 	public static void handleDropdownByValue(WebElement element, String value) {
