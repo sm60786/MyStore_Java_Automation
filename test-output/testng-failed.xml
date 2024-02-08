@@ -6,16 +6,12 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.store.testcases.TC_HomePageTest">
+      <class name="com.store.testcases.TC_MyAccountPageTest">
         <methods>
           <include name="setup"/>
-          <include name="teardown"/>
-          <include name="verifyWomensLink"/>
-          <include name="verifySignInLink"/>
-          <include name="verifyMyStoreLogo"/>
-          <include name="verifySearchTextField"/>
+          <include name="verifyWomenLink"/>
         </methods>
-      </class> <!-- com.store.testcases.TC_HomePageTest -->
+      </class> <!-- com.store.testcases.TC_MyAccountPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 import com.store.Utilities.ReadConfigurationFile;
 import com.store.Utilities.Util;
 import com.store.pageobject.HomePage;
-import com.store.pageobject.LoginPage;
 
 public class TC_HomePageTest extends BaseClass {
 	

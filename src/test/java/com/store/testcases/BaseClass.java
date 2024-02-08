@@ -30,7 +30,7 @@ public class BaseClass {
 	
 	public static Logger logger;
 	
-	@BeforeClass
+	@BeforeSuite
 	public void setup() {
 		
 		switch (browser.toLowerCase()) {
@@ -67,7 +67,7 @@ public class BaseClass {
 		
 	}
 	
-	@AfterClass
+	@AfterSuite
 	public void teardown() {
 		driver.quit();
 	}

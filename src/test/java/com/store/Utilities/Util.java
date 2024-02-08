@@ -4,12 +4,17 @@ import java.time.LocalDateTime;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-public class Util {
+import com.store.testcases.BaseClass;
+
+public class Util extends BaseClass {
 	
 	// Constants
 	public static final int IMPLICTLY_WAIT = 10;
+	
+	public static Actions actions = new Actions(driver);
 	
 	/**
 	 * 
@@ -51,6 +56,10 @@ public class Util {
 		ReadConfigurationFile readConfig = new ReadConfigurationFile();
 		String fName = readConfig.getValue("firstname");
 		return fName + getCurrentTime() + "@gmail.com";
+	}
+	
+	public static void hoverOnElement(WebElement element) {
+		actions.moveToElement(element).perform();
 	}
 
 }

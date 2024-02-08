@@ -35,6 +35,7 @@ public class LoginPage {
 	WebElement buttonSignIn;
 	
 	
+	
 	/**
 	 * Actions for Creating Account
 	 * @param emailAddress
@@ -59,8 +60,9 @@ public class LoginPage {
 		textFieldPasswordRegisteredAcc.sendKeys(password);
 	}
 	
-	public void clickOnSignInButton() {
+	public MyAccountPage clickOnSignInButton() {
 		buttonSignIn.click();
+		return new MyAccountPage(ldriver);
 	}
 	
 }
